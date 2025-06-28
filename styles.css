@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: monospace;
+  overflow-x: hidden;
+}
+section {
+  padding-top: 5rem;
+}
+#about {
+  position: relative;
+  background: #d6d3e0;
+  z-index: 0;
+}
+
+#about::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vw;
+  background: linear-gradient(to left, #493f68, #9f9feb);
+  z-index: -1;
+}
+.nav-link:hover {
+  margin-bottom: 1px;
+  border: 3px rgb(126, 85, 184) solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7);
+  transition: padding-left 0.4s ease, border-radius 0.4s ease;
+}
+.nav-link:focus {
+  margin-bottom: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px rgb(126, 85, 184) solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease;
+}
+
+.navbar-toggler:hover {
+  margin-bottom: 1px;
+  border: 3px rgb(126, 85, 184) solid;
+  border-radius: 10px;
+  padding-left: 10px;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.7);
+  transition: border-radius 0.2s ease;
+}
+/* Jumbotron */
+
+.jumbotron {
+  padding-top: 2rem;
+  background: linear-gradient(to right, #9f9feb, #493f68);
+}
+#jumbotron {
+  margin-top: 0px;
+}
+/* Sosmed */
+
+#sosmed img {
+  width: 100%;
+  background-color: white transparent;
+}
+
+.row-medsos div {
+  border: 2px #1c1923 solid;
+  border-radius: 7px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  background-color: #5c4f79;
+  margin-bottom: 30px;
+}
+.row-medsos div:hover {
+  background-color: #6e638a;
+  border: 2px #0c0c0d solid;
+  border-radius: 12px;
+  transition: background-color 0.2s ease, border-radius 0.1s ease;
+}
+
+/* Contact */
+
+#contact {
+  background-color: #d6d3e0;
+}
+#contact button {
+  width: 70px;
+  height: 40px;
+  background-color: #9784c9;
+  border: 2px #272238 solid;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  cursor: pointer;
+}
+#contact button:hover {
+  background-color: #272238;
+  margin-left: 3px;
+
+  transition: margin-left 0.1s ease-in-out;
+}
+#email:focus,
+#message:focus,
+#name:focus {
+  background-color: #c7c7cb;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.5);
+  border: 3px #9784c9 solid;
+  transition: background-color 0.2s ease, box-shadow 0.4s ease;
+}
+#contact {
+  background-color: #d6d3e0;
+  position: relative;
+  bottom: 0;
+  z-index: 0;
+}
+#contact::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vw;
+  background: linear-gradient(to left, #493f68, #9f9feb);
+  z-index: -1;
+}
+
+/* Footer */
+
+#footer {
+  /* z-index: -2; */
+  background: linear-gradient(to left, #493f68, #9f9feb);
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
